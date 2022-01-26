@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="/css/tailwind.css" />
+  </head>
+  <body>
+    <!-- This div sets the flex display mode for the div inside it (flex + justify-center) -->
+    <div class="bg-black text-white flex justify-center">
+      <!-- This div adds a width to the container plus a flex display mode for its children elements (flex, justify-between and items-center) -->
+      <div class="h-16 w-4/5 max-w-3xl flex justify-between items-center">
+        <!-- width -->
+        <div class="text-white text-2xl">LOGO</div>
+        <div class="flex">
+          <div>Sign Up</div>
+          <div class="ml-6">Login</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- div with display flex and justify-center. I also added a background colour full width -->
+    <div class="bg-gray-300 flex justify-center">
+      <!-- flex container + justify center -->
+      <div class="flex w-3/4 max-w-4xl justify-between items-center h-72">
+        <!-- max width + flex and justify between for its children elements -->
+        <div class="text-white bg-gray-600 px-3 py-2 rounded-md">Subscribe &#9662;</div>
+        <div class="w-52">
+          <img class="w-80" src="/pages/internet-is-hard/flexbox/images/awesome-logo.svg" alt="" />
+        </div>
+        <div><img class="w-44" src="/pages/internet-is-hard/flexbox/images/social-icons.svg" alt="" /></div>
+      </div>
+    </div>
+    <div class="bg-gray-200 flex justify-center">
+      <!-- This is simply a div to center-align a child container -->
+      <div class="flex flex-wrap justify-start w-3/4 max-w-4xl max-h-full">
+        <!-- This instead, has a width and then sets some display rules (flex) for its children elements -->
+        <div class="w-52 h-52">
+          <img src="/pages/internet-is-hard/flexbox/images/one.svg" alt="" />
+        </div>
+        <div class="w-52 h-52">
+          <img src="/pages/internet-is-hard/flexbox/images/two.svg" alt="" />
+        </div>
+        <div class="w-52 h-52">
+          <img src="/pages/internet-is-hard/flexbox/images/three.svg" alt="" />
+        </div>
+        <div class="w-52 h-52">
+          <img src="/pages/internet-is-hard/flexbox/images/four.svg" alt="" />
+        </div>
+        <div class="w-52 h-52">
+          <img src="/pages/internet-is-hard/flexbox/images/five.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

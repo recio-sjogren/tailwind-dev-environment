@@ -1,0 +1,40 @@
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+}
+
+
+.button:link,
+.button {
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  background-color: lightblue;
+  font-weight: bold;
+  padding: 20px 10px;
+  border-radius: 5px;
+  width: 200px;
+  margin: 20px auto;
+}
+
+.button:hover,
+.button:visited:hover {
+  color: white;
+  background-color: blue;
+}
+
+.button:active,
+.button:visited:active {
+  color: white;
+  border: 4px solid black;
+}
+
+p:last-of-type {
+  margin-bottom: 50px;
+}
+
+.call-to-action {
+  background-color: black;
+}

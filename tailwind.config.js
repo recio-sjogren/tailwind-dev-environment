@@ -1,11 +1,14 @@
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
+  content: ["./pages/**/*.html", "./*.html"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        nunito: ["nunito", "font-sans"],
+      },
+    },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
-}
+  plugins: [require("@tailwindcss/typography")],
+};
